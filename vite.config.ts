@@ -9,8 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base:"/UEMS/",
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+    base:"/UEMS/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
